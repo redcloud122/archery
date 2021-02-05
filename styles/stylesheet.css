@@ -1,0 +1,8 @@
+nav ul { list-style-type: none; }
+
+p.yellow {
+  color: #ecb722;
+  font-weight: bolder;
+}
+
+footer { background-image: url("../images/footerImage.jpg") }
