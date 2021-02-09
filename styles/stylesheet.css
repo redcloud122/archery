@@ -1,8 +1,173 @@
-nav ul { list-style-type: none; }
-
-p.yellow {
-  color: #ecb722;
-  font-weight: bolder;
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
 }
 
-footer { background-image: url("../images/footerImage.jpg") }
+h2 {
+  font-size: 24px;
+  color: #1b447f;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 17px;
+  color: #1b447f;
+  font-weight: bold;
+}
+
+.wrapper, .row-header, .row-content {
+  display: grid;
+  /* border: 1px solid red; */
+}
+
+article.grid {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+article.grid section {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+article.grid section p {
+  color: #03a3df;
+  padding-left: 2em;
+}
+
+article.flexbox {
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row-header {
+  grid-template-columns: 2fr 5fr;
+  background: #03a3df;
+}
+
+.row-content {
+  grid-template-columns: 320px 1fr;
+}
+
+.row-footer {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+aside, main {
+  /* border: 1px solid red; */
+  padding: .5em;
+}
+
+header.row-header, footer { padding: 1em 1em 1em 4em; }
+
+nav {
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: flex-end;
+  padding-top: 2em;
+  padding-right: 2em;
+}
+
+nav ul, footer ul { padding: 0;}
+
+nav ul li, footer ul li {
+  display: inline-block;
+}
+
+nav ul li:after, footer ul li:after {
+  content: " / ";
+  color: white;
+  padding: 0 .5em;
+}
+
+nav ul li:last-child:after, footer ul li:last-child:after {
+  content: none;
+}
+
+nav, nav li a {
+  color:white;
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+aside article {
+  margin-right: 2em;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+aside p {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+aside article p, aside article a {
+  color: #1b447f;
+}
+
+aside article.board {
+  background: #1b447f;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.board h2, .board h3, .board h4, .board p, .board a, .board q {
+  color: white;
+}
+
+.board section {
+  padding-bottom: 1em;
+}
+
+main {
+  padding-right: 2em;
+}
+
+main p.breadcrumb {
+  color: rgb(161, 159, 159);
+  /* text-align: right; */
+}
+
+main a{
+  color: #03a3df;
+}
+
+.yellow {
+  color: #ecb722;
+  font-weight: bold;
+}
+
+hr {
+  color: #ecb722;
+  border-bottom: 1px;
+  margin-right: .5em;
+}
+
+.white {
+  color: white;
+}
+
+.indent {
+  text-indent: 1.5em;
+}
+
+footer {
+  background-image: url("../images/footerImage.jpg");
+  background-size: contain;
+  padding-right: 60%;
+}
+
+footer p, footer a{
+  color: white;
+  font-weight: bold;
+  font-size: .7em;
+}
