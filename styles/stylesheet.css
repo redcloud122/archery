@@ -4,6 +4,16 @@
   color: #444;
 }
 
+.hidden {
+  position: relative;
+  left: -10000px;
+  top:auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
 h2 {
   font-size: 24px;
   color: #1b447f;
@@ -96,6 +106,7 @@ nav, nav li a {
   font-size: 1em;
   text-decoration: none;
   font-weight: bold;
+  padding: 1rem 1rem;
 }
 
 aside article {
